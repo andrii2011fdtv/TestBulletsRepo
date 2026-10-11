@@ -15,7 +15,7 @@ public class CharacterScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(BulletCloneTemplate);
+            Instantiate(BulletCloneTemplate, transform.position, transform.rotation);
         }
     }
 }

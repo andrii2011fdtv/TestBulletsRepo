@@ -14,4 +14,8 @@ public class BulletScript : MonoBehaviour
     {
         transform.position += bulletspeed * transform.forward * Time.deltaTime;
     }
+     private void OnCollisionEnter(Collision collision)
+    {
+     print("ouch!"); 
+    }
 }
